@@ -79,3 +79,7 @@ This evaluates summarization tasks using OpenAI LLMs to check how well a summari
 ## Embeddings Distance
 
 Given an embedder, as is typical in vector DBs, this evaluates the distance of the query and document embeddings. Currently supporting cosine distance, L1/Manhattan distance, and L2/Euclidean distance.
+
+## Hallucination
+
+Given an assertion and a citation, the model outputs a probabilitity from 0 to 1, 0 being a hallucination and 1 being factually consistent. For example the predictions can be thresholded at 0.5 to predict whether a document is consistent with its source. 
